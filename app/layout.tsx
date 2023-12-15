@@ -6,6 +6,9 @@ import ChakraProviderWrapper from "./ChakraProviderWrapper";
 export const metadata: Metadata = {
   title: "L'art des rêves lucides",
   description: "Apprenez à faire des rêves lucides.",
+  icons: {
+    icon: "./favicon.png"
+  }
 };
 
 export default function RootLayout({
