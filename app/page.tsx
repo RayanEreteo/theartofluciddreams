@@ -1,6 +1,7 @@
 import { Button, Flex, Box, Heading, Text } from "@chakra-ui/react";
 import CardLink from "./components/CardLink";
 
+import MethodThumbnail from "./assets/images/MethodThumbnail.jpg"
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
         </Text>
       </Box>
       <Flex className="category-wrapper" flexDirection={"row"} mt={"10rem"}>
-        <CardLink Thumbnail={""} Title={"Test"} RedirectTo={"qd"}/>
+        <CardLink Thumbnail={MethodThumbnail} Title={"Method"} RedirectTo={"qd"}/>
       </Flex>
     </Flex>
   );

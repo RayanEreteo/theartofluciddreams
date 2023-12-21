@@ -1,17 +1,29 @@
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import Link from 'next/link'
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Text,
+  Flex,
+} from "@chakra-ui/react";
+import Link from "next/link";
+import Image from "next/image";
 
-interface cardLinkInterface{
-  Thumbnail: String,
-  Title: String,
-  RedirectTo: String
+interface cardLinkInterface {
+  Thumbnail: String;
+  Title: String;
+  RedirectTo: String;
 }
-
 
 function CardLink({ Thumbnail, Title, RedirectTo }: cardLinkInterface) {
   return (
-    <Link href={RedirectTo}>{Title}</Link>
-  )
+    <Flex textAlign={"center"}>
+      <Link href={RedirectTo}>
+        <Image src={Thumbnail} width={200} />
+        <Text color={"white"}>{Title}</Text>
+      </Link>
+    </Flex>
+  );
 }
 
-export default CardLink
+export default CardLink;
