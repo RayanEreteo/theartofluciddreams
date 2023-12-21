@@ -1,8 +1,16 @@
+import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import Link from 'next/link'
+
+interface cardLinkInterface{
+  Thumbnail: String,
+  Title: String,
+  RedirectTo: String
+}
 
 
-function CardLink() {
+function CardLink({ Thumbnail, Title, RedirectTo }: cardLinkInterface) {
   return (
-    <div>CardLink</div>
+    <Link href={RedirectTo}>{Title}</Link>
   )
 }
 

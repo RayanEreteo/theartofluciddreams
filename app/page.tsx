@@ -6,25 +6,24 @@ export default function Home() {
   return (
     <Flex
       className="Main"
-      backgroundColor={"#7FC6B8"}
       flexDirection={"column"}
       justifyContent={"center"}
       alignItems={"center"}
       m={"auto"}
-      w={"100vw"}
-      h={"100vh"}
     >
-      <Heading fontSize={"4rem"} color={"white"} textAlign={"center"}>
-        L'art des rêves lucides
-      </Heading>
-      <Text fontSize={"1.3rem"} opacity={"0.8"} color={"white"}>
-        Blog développé par{" "}
-        <Text as={"span"} textDecoration={"underline"}>
-          Rayan Ereteo
+      <Box className="presentation-text" textAlign={"center"}>
+        <Heading fontSize={"4rem"} color={"white"}>
+          L'art des rêves lucides
+        </Heading>
+        <Text fontSize={"1.3rem"} opacity={"0.8"} color={"white"}>
+          Blog développé par{" "}
+          <Text as={"span"} textDecoration={"underline"}>
+            Rayan Ereteo
+          </Text>
         </Text>
-      </Text>
+      </Box>
       <Box className="luciddream-desc" color={"white"} mt={"10rem"} textAlign={"center"}>
-        <Heading>Un rêve lucide, c'est quoi ?</Heading>
+        <Heading fontSize={"2rem"}>Un rêve lucide, c'est quoi ?</Heading>
         <br />
         <Text maxW={"800px"} fontSize={"1.2rem"}>
           Un rêve lucide est un type particulier de rêve où le rêveur devient
@@ -35,7 +34,9 @@ export default function Home() {
           propre rêve.
         </Text>
       </Box>
-      <Flex className="category-wrapper" flexDirection={"row"}></Flex>
+      <Flex className="category-wrapper" flexDirection={"row"} mt={"10rem"}>
+        <CardLink Thumbnail={""} Title={"Test"} RedirectTo={"qd"}/>
+      </Flex>
     </Flex>
   );
 }
