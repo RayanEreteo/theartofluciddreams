@@ -36,7 +36,9 @@ export default function Home() {
         </Text>
       </Box>
       <Flex className="category-wrapper" flexDirection={"row"} mt={"10rem"}>
-        <CardLink Thumbnail={MethodThumbnail} Title={"Method"} RedirectTo={"qd"}/>
+        <CardLink Thumbnail={MethodThumbnail} Title={"Method"} RedirectTo={"method"}/>
+        <CardLink Thumbnail={MethodThumbnail} Title={"Conseil"} RedirectTo={"advices"}/>
+        <CardLink Thumbnail={MethodThumbnail} Title={"F.A.Q"} RedirectTo={"faq"}/>
       </Flex>
     </Flex>
   );

@@ -20,7 +20,7 @@ function CardLink({ Thumbnail, Title, RedirectTo }: cardLinkInterface) {
     <Flex textAlign={"center"} background={"black"}>
       <Link href={RedirectTo}>
         <Image src={Thumbnail} width={200} alt="method thumbnail"/>
-        <Text color={"white"}>{Title}</Text>
+        <Text color={"white"} fontWeight={"bold"}>{Title}</Text>
       </Link>
     </Flex>
   );
