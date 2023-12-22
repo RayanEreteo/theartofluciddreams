@@ -7,19 +7,19 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface cardLinkInterface {
-  Thumbnail: String;
+  Thumbnail: StaticImageData;
   Title: String;
   RedirectTo: String;
 }
 
 function CardLink({ Thumbnail, Title, RedirectTo }: cardLinkInterface) {
   return (
-    <Flex textAlign={"center"}>
+    <Flex textAlign={"center"} background={"black"}>
       <Link href={RedirectTo}>
-        <Image src={Thumbnail} width={200} />
+        <Image src={Thumbnail} width={200} alt="method thumbnail"/>
         <Text color={"white"}>{Title}</Text>
       </Link>
     </Flex>
