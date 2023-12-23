@@ -12,7 +12,7 @@ export default function Home() {
       alignItems={"center"}
       m={"auto"}
     >
-      <Box className="presentation-text" textAlign={"center"}>
+      <Box className="presentation-text" textAlign={"center"} mt={'3rem'}>
         <Heading fontSize={"4rem"} color={"white"}>
           L'art des rêves lucides
         </Heading>
@@ -23,7 +23,7 @@ export default function Home() {
           </Text>
         </Text>
       </Box>
-      <Box className="luciddream-desc" color={"white"} mt={"10rem"} textAlign={"center"}>
+      <Box className="luciddream-desc" color={"white"} mt={"7rem"} textAlign={"center"}>
         <Heading fontSize={"2rem"}>Un rêve lucide, c'est quoi ?</Heading>
         <br />
         <Text maxW={"800px"} fontSize={"1.2rem"}>
@@ -35,10 +35,10 @@ export default function Home() {
           propre rêve.
         </Text>
       </Box>
-      <Flex className="category-wrapper" flexDirection={"row"} mt={"10rem"}>
-        <CardLink Thumbnail={MethodThumbnail} Title={"Method"} RedirectTo={"method"}/>
-        <CardLink Thumbnail={MethodThumbnail} Title={"Conseil"} RedirectTo={"advices"}/>
-        <CardLink Thumbnail={MethodThumbnail} Title={"F.A.Q"} RedirectTo={"faq"}/>
+      <Flex className="category-wrapper" flexDirection={"row"} mt={"4rem"}>
+        <CardLink Thumbnail={MethodThumbnail} Title={"Techniques"} RedirectTo={"method"} Desc={"Renseignez-vous sur les méthodes pour induire des rêves lucides."}/>
+        <CardLink Thumbnail={MethodThumbnail} Title={"Conseil"} RedirectTo={"advices"} Desc={"test"}/>
+        <CardLink Thumbnail={MethodThumbnail} Title={"F.A.Q"} RedirectTo={"faq"} Desc={"test"}/>
       </Flex>
     </Flex>
   );
